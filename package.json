@@ -1,0 +1,18 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "Parser google fetches..",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Vadim Sabitov",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.2.0"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.5.0",
+    "electron-store": "^8.0.1"
+  }
+}

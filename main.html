@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            Scraper v1.0.0
+        </title>
+        <style>
+ .button10 {
+  display: inline-block;
+  color: black;
+  font-size: 125%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(250,172,17);
+  border-radius: 7px;
+  background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+a.button10:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+a.button10:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(177,159,0,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+
+  span { color: #ffffff; font-family: ‘Raleway’,sans-serif; font-size: 26px; font-weight: 400px; line-height: 36px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+        </style>
+    </head>
+    <body>
+        <img src='images/1613314229_126-p-sine-fioletovii-gradient-fon-146.jpg' id="background" style="position: fixed; z-index: -1; left: -10; top: -10;"/>
+        <img src='images/imgs_touch-1.png' id="cat" style="position: fixed; z-index: 0; right: 25; bottom: 25;"/>
+        <img src='images/29961a3043a08c1a504dfb46906cb223-removebg-preview-1.jpg' id="logotype" style="position: fixed; z-index: -1; top: 15;"/>
+        <div id="main" style="position: fixed; z-index: 10;">
+            <span>Введите строку запроса</span>
+            <br>
+            <br>
+            <input type="text">
+            <br>
+            <br>
+            <button style="left: 10px;" id="bttn" class="button10">Extract links</button>
+        </div>
+        <script>
+            background.style.width = window.innerWidth * 1.1;
+            background.style.height = window.innerHeight * 1.1;
+
+            cat.style.width = window.innerWidth / 4 * 1.165;
+            cat.style.height = window.innerWidth / 4 * 1;
+
+            logotype.style.width = window.innerWidth / 8 * 0.9569;
+            logotype.style.height = window.innerWidth / 8 * 1;
+            console.log(logotype.style.width);
+            logotype.style.left = (window.innerWidth - logotype.width) / 2 + "";
+
+            main.style.left = (window.innerWidth - main.style.width) / 2 - 420 + "";
+            main.style.top = (window.innerHeight - main.style.height) / 2 - 50 + "";
+        </script>
+    </body>
+</html>
